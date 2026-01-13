@@ -31,6 +31,7 @@ export interface CompanyInfo {
   name: string;
   representative: string;
   facilityName: string;
+  postalCode: string;
   address: string;
   phone: string;
   email: string;
@@ -38,4 +39,18 @@ export interface CompanyInfo {
   stations: string;
   reservationUrl: string;
   instagram: string;
+  line: string;
+}
+
+export interface StaffMember {
+  name: string;
+  role: string;
+  description: string;
+  image?: string;
+}
+
+export interface TrainingProgram {
+  name: string;
+  price: string;
+  note?: string;
 }

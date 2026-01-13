@@ -63,7 +63,7 @@ export const Contact: React.FC = () => {
           </a>
 
           {/* LINE */}
-          <a href="#" className="block group">
+          <a href={COMPANY_INFO.line} target="_blank" rel="noopener noreferrer" className="block group">
             <div 
               className="bg-[#F9F7F2] text-[#595045] p-8 h-full transition-all duration-300 hover:-translate-y-1 hover:bg-white relative overflow-hidden"
               style={{ borderRadius: "20px" }}

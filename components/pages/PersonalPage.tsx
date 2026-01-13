@@ -1,8 +1,8 @@
 import React from 'react';
 import { SectionTitle } from '../SectionTitle';
 import { Button } from '../Button';
-import { COMPANY_INFO } from '../../constants';
-import { Check, Dumbbell, Trophy, HeartPulse } from 'lucide-react';
+import { COMPANY_INFO, PERSONAL_PROGRAMS, PERSONAL_DESCRIPTION } from '../../constants';
+import { Check, Dumbbell, Trophy, HeartPulse, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const PersonalPage: React.FC = () => {
@@ -16,15 +16,30 @@ export const PersonalPage: React.FC = () => {
 
       <div className="text-center mb-16">
         <span className="inline-block px-4 py-1 bg-[#8FB1CC] text-white text-sm font-bold mb-4 rounded-full">
-          中学生〜大人・シニア
+          {PERSONAL_DESCRIPTION.target}対象
         </span>
         <h1 className="text-3xl md:text-5xl font-black text-[#595045] mb-4">
           パーソナルトレーニング
         </h1>
-        <p className="text-[#595045]/80 text-lg">
-          目的に合わせた完全オーダーメイド。<br/>
-          スポーツパフォーマンス向上から健康維持まで。
+        <p className="text-[#595045]/80 text-lg mb-4">
+          サッカー・ゴルフなどに特化したプログラム、<br/>
+          様々なダイエットプログラムを提供致します。
         </p>
+        <div className="inline-flex items-center gap-2 bg-[#F9F7F2] px-4 py-2 rounded-full text-sm text-[#595045]">
+          <Clock size={16} className="text-[#94A684]" />
+          <span className="font-bold">{PERSONAL_DESCRIPTION.schedule}</span>
+        </div>
+      </div>
+
+      {/* Programs Grid */}
+      <SectionTitle title="プログラム一覧" subtitle="お客様の目的に合わせたトレーニング" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        {PERSONAL_PROGRAMS.map((program, idx) => (
+          <div key={idx} className="bg-white p-6 rounded-2xl border border-[#94A684]/20 shadow-sm text-center hover:shadow-md transition-shadow">
+            <h3 className="text-lg font-bold text-[#595045] mb-2">{program.name}</h3>
+            <p className="text-[#94A684] font-black text-xl">{program.price}</p>
+          </div>
+        ))}
       </div>
 
       {/* Categories */}
@@ -33,7 +48,7 @@ export const PersonalPage: React.FC = () => {
           {
             icon: Trophy,
             title: "競技力向上",
-            desc: "サッカー、ゴルフ、野球など、各種スポーツに必要な身体の使い方、体幹、瞬発力を強化します。",
+            desc: "サッカー、ゴルフなど、各種スポーツに必要な身体の使い方、体幹、瞬発力を強化します。",
             color: "text-[#E6A57E]"
           },
           {
@@ -44,8 +59,8 @@ export const PersonalPage: React.FC = () => {
           },
           {
             icon: HeartPulse,
-            title: "健康維持・リハビリ",
-            desc: "運動不足解消、怪我からの復帰、高齢者のフレイル予防まで。個人の体力レベルに合わせて調整します。",
+            title: "健康維持・持久力",
+            desc: "運動不足解消、持久力アップ。個人の体力レベルに合わせて調整します。",
             color: "text-[#8FB1CC]"
           }
         ].map((item, idx) => (
@@ -101,7 +116,7 @@ export const PersonalPage: React.FC = () => {
           <div className="text-center">
             <p className="font-bold text-[#595045] mb-2">【ご予約可能時間】</p>
             <p className="text-[#595045]/80">
-              平日・土日祝: <span className="font-bold">10:00 〜 20:00</span><br/>
+              <span className="font-bold">{PERSONAL_DESCRIPTION.schedule}</span><br/>
               <span className="text-xs">※完全予約制です。Webまたはお電話にてご予約ください。</span>
             </p>
           </div>

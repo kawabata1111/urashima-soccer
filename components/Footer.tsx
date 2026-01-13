@@ -1,6 +1,6 @@
 import React from 'react';
 import { COMPANY_INFO, NAV_ITEMS } from '../constants';
-import { MapPin, Instagram, Mail, User } from 'lucide-react';
+import { MapPin, Instagram, Mail, User, MessageCircle } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -20,6 +20,9 @@ export const Footer: React.FC = () => {
               <a href={COMPANY_INFO.instagram} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-[#F9F7F2]/10 flex items-center justify-center hover:bg-[#94A684] transition-colors" style={{ borderRadius: '43% 57% 70% 30% / 30% 30% 70% 70%' }}>
                 <Instagram size={20} />
               </a>
+              <a href={COMPANY_INFO.line} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-[#F9F7F2]/10 flex items-center justify-center hover:bg-[#94A684] transition-colors" style={{ borderRadius: '43% 57% 70% 30% / 30% 30% 70% 70%' }}>
+                <MessageCircle size={20} />
+              </a>
             </div>
           </div>
 
@@ -35,7 +38,7 @@ export const Footer: React.FC = () => {
               <p><span className="font-bold text-[#E6A57E] mr-2">施設名</span> {COMPANY_INFO.facilityName}</p>
               <p className="flex items-start gap-3">
                 <MapPin size={16} className="text-[#94A684] mt-1 shrink-0" />
-                <span>{COMPANY_INFO.address}</span>
+                <span>{COMPANY_INFO.postalCode} {COMPANY_INFO.address}</span>
               </p>
               <p className="pl-7 text-xs text-[#F9F7F2]/50">（{COMPANY_INFO.stations}）</p>
               <p><span className="font-bold text-[#E6A57E] mr-2">TEL</span> {COMPANY_INFO.phone}</p>

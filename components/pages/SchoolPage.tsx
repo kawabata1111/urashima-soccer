@@ -1,9 +1,9 @@
 import React from 'react';
 import { SectionTitle } from '../SectionTitle';
 import { Button } from '../Button';
-import { COMPANY_INFO } from '../../constants';
+import { COMPANY_INFO, STAFF_MEMBERS, SCHOOL_DESCRIPTION } from '../../constants';
 import { HandDrawnHex, TacticArrow } from '../Decorations';
-import { CheckCircle2, Clock, CalendarDays } from 'lucide-react';
+import { CheckCircle2, Clock, CalendarDays, Users, Home, Brain, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const SchoolPage: React.FC = () => {
@@ -27,11 +27,31 @@ export const SchoolPage: React.FC = () => {
             サッカースクール<br/>
             <span className="text-[#94A684] text-2xl md:text-3xl">浦崎式「個」の育成メソッド</span>
           </h1>
-          <p className="text-[#595045]/80 text-lg leading-relaxed max-w-3xl">
+          <p className="text-[#595045]/80 text-lg leading-relaxed max-w-3xl mb-6">
             チーム練習だけでは補いきれない「個人の技術」「判断力」「身体操作」を徹底的に磨きます。<br/>
             少人数制だからこそできる、一人ひとりの癖や特徴に合わせた指導が特徴です。
           </p>
+          <p className="text-[#595045]/70 text-sm leading-relaxed max-w-3xl">
+            {SCHOOL_DESCRIPTION.philosophy}
+          </p>
         </div>
+      </div>
+
+      {/* Features Section */}
+      <SectionTitle title={SCHOOL_DESCRIPTION.title} subtitle="当スクールの特徴" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        {[
+          { icon: Users, title: '少人数制', desc: SCHOOL_DESCRIPTION.features[0] },
+          { icon: Home, title: '室内トレーニング', desc: SCHOOL_DESCRIPTION.features[1] },
+          { icon: Brain, title: '脳トレ×運動', desc: SCHOOL_DESCRIPTION.features[2] },
+          { icon: CheckCircle2, title: '判断力向上', desc: SCHOOL_DESCRIPTION.features[3] },
+        ].map((feature, idx) => (
+          <div key={idx} className="bg-white p-6 rounded-2xl border border-[#94A684]/20 shadow-sm">
+            <feature.icon className="w-10 h-10 text-[#94A684] mb-4" />
+            <h3 className="font-bold text-[#595045] mb-2">{feature.title}</h3>
+            <p className="text-sm text-[#595045]/70">{feature.desc}</p>
+          </div>
+        ))}
       </div>
 
       {/* 5 Elements Grid */}
@@ -110,6 +130,29 @@ export const SchoolPage: React.FC = () => {
              </a>
           </div>
         </div>
+      </div>
+
+      {/* Staff Section */}
+      <SectionTitle title="スタッフ紹介" subtitle="経験豊富な指導陣" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+        {STAFF_MEMBERS.map((staff, idx) => (
+          <div key={idx} className="bg-white p-6 rounded-2xl border border-[#94A684]/20 shadow-sm hover:shadow-md transition-shadow">
+            <div className="flex items-start gap-4">
+              <div className="w-16 h-16 bg-[#F9F7F2] rounded-full flex items-center justify-center flex-shrink-0">
+                <User className="w-8 h-8 text-[#94A684]" />
+              </div>
+              <div className="flex-grow">
+                <span className="inline-block px-2 py-0.5 bg-[#94A684]/10 text-[#94A684] text-xs font-bold rounded mb-1">
+                  {staff.role}
+                </span>
+                <h3 className="text-lg font-bold text-[#595045] mb-2">{staff.name}</h3>
+                <p className="text-sm text-[#595045]/70 whitespace-pre-line leading-relaxed">
+                  {staff.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
