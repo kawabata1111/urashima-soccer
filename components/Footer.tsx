@@ -20,6 +20,9 @@ export const Footer: React.FC = () => {
               <a href={COMPANY_INFO.instagram} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-[#F9F7F2]/10 flex items-center justify-center hover:bg-[#94A684] transition-colors" style={{ borderRadius: '43% 57% 70% 30% / 30% 30% 70% 70%' }}>
                 <Instagram size={20} />
               </a>
+              <a href={COMPANY_INFO.line} target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center hover:scale-110 transition-transform">
+                <img src="/images/line-icon.png" alt="LINE" className="w-full h-full object-contain" />
+              </a>
             </div>
           </div>
 

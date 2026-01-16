@@ -39,6 +39,20 @@ export const FloatingNav: React.FC = () => {
         <ArrowUp size={20} />
       </button>
 
+      {/* LINE Button */}
+      <a
+        href={COMPANY_INFO.line}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="pointer-events-auto group relative transition-all duration-300 hover:scale-105"
+        aria-label="LINEで問い合わせ"
+      >
+        <span className="absolute right-full mr-3 bg-white px-3 py-1 rounded-lg text-xs font-bold shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-[#595045] top-1/2 -translate-y-1/2">
+          LINEで質問
+        </span>
+        <img src="/images/line-icon.png" alt="LINE" className="w-14 h-14 object-contain" />
+      </a>
+
       {/* Reservation CTA Button */}
       <a
         href={COMPANY_INFO.reservationUrl}
