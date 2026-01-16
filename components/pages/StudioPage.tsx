@@ -17,7 +17,7 @@ export const StudioPage: React.FC = () => {
       {/* Hero-like area */}
       <div className="relative rounded-[40px] overflow-hidden h-[400px] mb-12 shadow-lg group">
         <img 
-          src="https://picsum.photos/id/1068/1200/600" 
+          src="/images/service-studio.png" 
           alt="Studio Interior" 
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
