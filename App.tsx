@@ -9,6 +9,7 @@ import { HomePage } from './components/HomePage';
 import { SchoolPage } from './components/pages/SchoolPage';
 import { PersonalPage } from './components/pages/PersonalPage';
 import { StudioPage } from './components/pages/StudioPage';
+import { FloatingNav } from './components/FloatingNav';
 
 // Scroll to top on route change (except for hash links)
 const ScrollToTop = () => {
@@ -35,6 +36,7 @@ function App() {
             <Route path="/service/studio" element={<StudioPage />} />
           </Routes>
         </main>
+        <FloatingNav />
         <Contact />
         <Footer />
       </div>
