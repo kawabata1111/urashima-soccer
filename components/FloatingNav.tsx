@@ -44,13 +44,13 @@ export const FloatingNav: React.FC = () => {
         href={COMPANY_INFO.line}
         target="_blank"
         rel="noopener noreferrer"
-        className="pointer-events-auto group relative flex items-center justify-center p-0 w-14 h-14 bg-[#06C755] rounded-full shadow-lg hover:scale-105 transition-all duration-300"
+        className="pointer-events-auto group relative flex items-center justify-center p-0 w-14 h-14 bg-white rounded-full shadow-lg hover:scale-105 transition-all duration-300 overflow-hidden"
         aria-label="LINEで問い合わせ"
       >
         <span className="absolute right-full mr-3 bg-white px-3 py-1 rounded-lg text-xs font-bold shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-[#595045]">
           LINEで質問
         </span>
-        <MessageCircle size={28} className="text-white" />
+        <img src="/images/line-icon.png" alt="LINE" className="w-full h-full object-cover" />
       </a>
 
       {/* Reservation CTA Button */}
