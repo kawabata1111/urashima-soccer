@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative w-full h-[85vh] min-h-[700px] overflow-hidden flex items-center justify-center">
+    <section id="hero" className="relative w-full h-[85vh] min-h-[600px] md:min-h-[700px] overflow-hidden flex items-start pt-32 md:pt-0 md:items-center justify-center">
       
       {/* Background Decor: Giant Faint Soccer Ball Outline */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vh] h-[120vh] opacity-[0.03] text-[#595045] pointer-events-none animate-spin-slow" style={{ animationDuration: '60s' }}>
