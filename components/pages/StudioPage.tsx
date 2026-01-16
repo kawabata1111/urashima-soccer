@@ -24,7 +24,7 @@ export const StudioPage: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8 md:p-12">
           <div className="text-white">
             <span className="inline-block px-4 py-1 bg-[#94A684] text-white text-sm font-bold mb-3 rounded-full">
-              土日祝・平日夜間
+              土日祝 10:00 - 21:00
             </span>
             <h1 className="text-3xl md:text-5xl font-black mb-2">レンタルスタジオ</h1>
             <p className="text-lg opacity-90">
@@ -97,12 +97,12 @@ export const StudioPage: React.FC = () => {
              <h3 className="text-xl font-bold text-[#595045] mb-6 text-center">ご利用料金</h3>
              
              <div className="text-center mb-6">
-               <p className="text-sm text-[#595045]/60 mb-1">土日祝・平日夜間</p>
-               <div className="flex items-end justify-center gap-1 text-[#94A684] font-black leading-none">
+               <p className="text-sm text-[#595045]/80 mb-1 font-bold">土日祝 10:00 - 21:00</p>
+               <div className="flex items-end justify-center gap-1 text-[#94A684] font-black leading-none my-3">
                  <span className="text-4xl">2,000</span>
                  <span className="text-lg mb-1">円</span>
                </div>
-               <p className="text-xs text-[#595045]/60 mt-2">/ 45分あたり</p>
+               <p className="text-xs text-[#595045]/60">1コマ（45分）あたり</p>
              </div>
 
              <div className="space-y-4 mb-8">
