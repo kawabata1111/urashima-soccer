@@ -1,6 +1,7 @@
 import React from 'react';
 import { COMPANY_INFO, NAV_ITEMS } from '../constants';
 import { MapPin, Instagram, Mail, User, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Footer: React.FC = () => {
   return (
@@ -61,7 +62,7 @@ export const Footer: React.FC = () => {
                   </a>
                 </li>
               ))}
-              <li><a href="#" className="text-[#F9F7F2]/80 hover:text-[#E6A57E] text-sm transition-colors">プライバシーポリシー</a></li>
+              <li><Link to="/privacy" className="text-[#F9F7F2]/80 hover:text-[#E6A57E] text-sm transition-colors">プライバシーポリシー</Link></li>
             </ul>
           </div>
         </div>

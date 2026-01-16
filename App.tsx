@@ -9,6 +9,7 @@ import { HomePage } from './components/HomePage';
 import { SchoolPage } from './components/pages/SchoolPage';
 import { PersonalPage } from './components/pages/PersonalPage';
 import { StudioPage } from './components/pages/StudioPage';
+import { PrivacyPolicyPage } from './components/pages/PrivacyPolicyPage';
 import { FloatingNav } from './components/FloatingNav';
 
 // Scroll to top on route change (except for hash links)
@@ -34,6 +35,7 @@ function App() {
             <Route path="/service/school" element={<SchoolPage />} />
             <Route path="/service/personal" element={<PersonalPage />} />
             <Route path="/service/studio" element={<StudioPage />} />
+            <Route path="/privacy" element={<PrivacyPolicyPage />} />
           </Routes>
         </main>
         <FloatingNav />
