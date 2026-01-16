@@ -83,8 +83,8 @@ export const PRICING_PLANS: PricePlan[] = [
   {
     category: 'サッカースクール',
     items: [
-      { name: 'U-9 (小1-3)', details: '月〜金 16:15-17:00', price: '1,500円 / 回' },
-      { name: 'U-12 (小4-6)', details: '月〜金 17:30-18:15', price: '1,500円 / 回' },
+      { name: 'U-9 (小1-3)', details: '毎週月曜日- 金曜日 16:15 - 17:00 (45分)', price: '1,500円 (1回)' },
+      { name: 'U-12 (小4-6)', details: '毎週月曜日- 金曜日 17:30 - 18:15 (45分)', price: '1,500円 (1回)' },
     ],
   },
   {
