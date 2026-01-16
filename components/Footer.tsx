@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
                 <Instagram size={20} />
               </a>
               <a href={COMPANY_INFO.line} target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center hover:scale-110 transition-transform overflow-hidden" style={{ borderRadius: '43% 57% 70% 30% / 30% 30% 70% 70%' }}>
-                <img src="/images/line-icon.png" alt="LINE" className="w-full h-full object-cover" />
+                <img src="/images/line-icon.png" alt="LINE" className="w-full h-full object-cover mix-blend-multiply" />
               </a>
             </div>
           </div>

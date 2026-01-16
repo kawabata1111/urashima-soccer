@@ -50,7 +50,7 @@ export const FloatingNav: React.FC = () => {
         <span className="absolute right-full mr-3 bg-white px-3 py-1 rounded-lg text-xs font-bold shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-[#595045]">
           LINEで質問
         </span>
-        <img src="/images/line-icon.png" alt="LINE" className="w-full h-full object-cover" />
+        <img src="/images/line-icon.png" alt="LINE" className="w-full h-full object-cover mix-blend-multiply" />
       </a>
 
       {/* Reservation CTA Button */}
