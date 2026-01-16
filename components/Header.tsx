@@ -83,10 +83,6 @@ export const Header: React.FC = () => {
             </a>
           ))}
           <div className="mt-6 flex flex-col gap-4">
-             <a href={`tel:${COMPANY_INFO.phone}`} className="flex items-center justify-center gap-2 py-3 bg-[#94A684] text-white rounded-[255px_15px_225px_15px/15px_225px_15px_255px] font-bold shadow-sm">
-               <Phone size={18} />
-               電話で予約
-             </a>
              <a href={COMPANY_INFO.reservationUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
                <Button variant="accent" fullWidth>無料体験予約フォーム</Button>
              </a>
