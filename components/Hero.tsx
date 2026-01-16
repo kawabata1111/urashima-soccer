@@ -6,8 +6,8 @@ import { SoccerBallSketch, TacticArrow } from './Decorations';
 
 const IMAGES = [
   'https://picsum.photos/id/1058/1200/800', // Kid activity
-  'https://picsum.photos/id/452/1200/800',  // Studio like
-  'https://picsum.photos/id/191/1200/800',  // Sporty
+  '/images/hero-1.png',                   // ユーザー指定画像1
+  '/images/hero-2.jpg',                   // ユーザー指定画像2
 ];
 
 export const Hero: React.FC = () => {

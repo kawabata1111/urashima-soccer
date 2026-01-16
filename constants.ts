@@ -38,21 +38,21 @@ export const SERVICES: ServiceItem[] = [
     title: '小学生サッカースクール',
     description: '「運動×脳トレ」の独自メソッド。技術・戦術・フィジカル・メンタル・社会性の5つをバランスよく指導します。',
     iconName: 'soccer',
-    image: 'https://picsum.photos/id/1058/800/600',
+    image: '/images/service-school.jpg',
   },
   {
     id: 'personal',
     title: 'パーソナルトレーニング',
     description: '中学生以上対象。サッカー・ゴルフ特化から、ダイエット、筋力・持久力アップまで個別にサポート。',
     iconName: 'dumbbell',
-    image: 'https://picsum.photos/id/338/800/600',
+    image: '/images/service-personal.png',
   },
   {
     id: 'studio',
     title: 'レンタルスタジオ',
     description: '土日祝はレンタルスタジオとして開放。ダンスやヨガ、ワークショップなど多目的にご利用いただけます。',
     iconName: 'building',
-    image: 'https://picsum.photos/id/1068/800/600',
+    image: '/images/service-studio.png',
   },
 ];
 
