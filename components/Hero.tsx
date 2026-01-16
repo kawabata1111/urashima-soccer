@@ -72,7 +72,7 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Right: Image in Soccer Ball Patch Shape */}
-        <div className="relative order-1 lg:order-2 flex justify-center">
+        <div className="relative order-1 lg:order-2 hidden lg:flex justify-center">
           <div className="relative w-[300px] h-[300px] md:w-[450px] md:h-[450px]">
             
             {/* Organic/Ball Shape Mask */}
