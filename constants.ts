@@ -88,7 +88,7 @@ export const PRICING_PLANS: PricePlan[] = [
     ],
   },
   {
-    category: 'パーソナル',
+    category: 'パーソナルトレーニング',
     items: [
       { name: '初回体験', details: 'カウンセリング込み', price: '無料', note: '※中学生以上対象' },
       { name: '通常トレーニング', details: '月〜金 9時/10時/20時', price: '3,000円 / 回' },

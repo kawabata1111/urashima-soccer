@@ -40,7 +40,7 @@ export const Pricing: React.FC = () => {
       >
         <div className="text-center mb-8">
           <h3 className="text-2xl font-bold text-[#595045] relative inline-block">
-            {PRICING_PLANS[activeTab].category} プラン
+            {PRICING_PLANS[activeTab].category}
             <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#F9F7F2] rounded-full"></span>
           </h3>
         </div>
