@@ -4,9 +4,10 @@ import { Button } from './Button';
 import { COMPANY_INFO } from '../constants';
 
 const IMAGES = [
-  '/images/school-cones.jpg',
-  '/images/hero-1.jpg',
   '/images/hero-2.jpg',
+  '/images/hero-1.jpg',
+  '/images/hero-lesson.jpg',
+  '/images/school-cones.jpg',
 ];
 
 export const Hero: React.FC = () => {
