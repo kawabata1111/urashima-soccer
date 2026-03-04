@@ -5,7 +5,7 @@ import { COMPANY_INFO } from '../constants';
 
 const IMAGES = [
   '/images/school-cones.jpg',
-  '/images/hero-1.png',
+  '/images/hero-1.jpg',
   '/images/hero-2.jpg',
 ];
 

@@ -45,14 +45,14 @@ export const SERVICES: ServiceItem[] = [
     title: 'パーソナルトレーニング',
     description: '中学生以上対象。サッカー・ゴルフ特化から、ダイエット、筋力・持久力アップまで個別にサポート。',
     iconName: 'dumbbell',
-    image: '/images/service-personal.png',
+    image: '/images/service-personal.jpg',
   },
   {
     id: 'studio',
     title: 'レンタルスタジオ',
     description: '土日祝はレンタルスタジオとして開放。ダンスやヨガ、ワークショップなど多目的にご利用いただけます。',
     iconName: 'building',
-    image: '/images/service-studio.png',
+    image: '/images/service-studio.jpg',
   },
 ];
 

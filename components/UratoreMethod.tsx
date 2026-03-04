@@ -54,7 +54,7 @@ export const UratoreMethod: React.FC = () => {
           </div>
           <div className="rounded-2xl overflow-hidden h-[350px] shadow-lg">
             <img
-              src="/images/uratore-method.png"
+              src="/images/uratore-method.jpg"
               alt="試合で活躍する選手"
               className="w-full h-full object-cover"
             />

@@ -16,7 +16,7 @@ export const Partners: React.FC = () => {
           <div className="relative rounded-2xl overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: 'url(/images/junior-athlete.png)' }}
+              style={{ backgroundImage: 'url(/images/junior-athlete.jpg)' }}
             />
             <div className="absolute inset-0 bg-[#3D3529]/70" />
             <div className="relative z-10 p-10 md:p-14 text-center text-white">
