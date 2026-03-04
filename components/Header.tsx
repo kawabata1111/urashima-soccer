@@ -34,7 +34,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex flex-col group" onClick={() => window.scrollTo(0,0)}>
-          <span className="text-2xl font-black text-[#94A684] tracking-wider group-hover:text-[#839674] transition-colors">URATORE</span>
+          <span className="text-2xl font-black text-[#94A684] tracking-wider group-hover:text-[#839674] transition-colors font-heading">URATORE</span>
           <span className="text-[10px] text-[#595045] font-bold">豊島サッカースクール＆スタジオ</span>
         </Link>
 

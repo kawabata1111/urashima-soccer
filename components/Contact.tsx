@@ -1,7 +1,7 @@
 import React from 'react';
 import { Phone, MessageCircle, Calendar, Mail } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
-import { GrassLine, NetPattern } from './Decorations';
+import { NetPattern } from './Decorations';
 
 export const Contact: React.FC = () => {
   return (
@@ -14,9 +14,11 @@ export const Contact: React.FC = () => {
         </svg>
       </div>
 
-      {/* Top Border: Grass */}
+      {/* Top Border: Smooth Wave */}
       <div className="absolute top-0 left-0 w-full text-[#F9F7F2]">
-        <GrassLine className="w-full h-12 md:h-16 text-[#F9F7F2]" />
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="w-full h-10 md:h-14">
+          <path d="M0,60 C360,0 720,50 1080,20 C1260,5 1380,30 1440,40 L1440,0 L0,0 Z" fill="currentColor" />
+        </svg>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 text-center">

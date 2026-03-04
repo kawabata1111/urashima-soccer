@@ -25,7 +25,7 @@ export const SchoolPage: React.FC = () => {
           </span>
           <h1 className="text-3xl md:text-5xl font-black text-[#595045] mb-6">
             サッカースクール<br/>
-            <span className="text-[#94A684] text-2xl md:text-3xl">浦崎式「個」の育成メソッド</span>
+            <span className="text-[#94A684] text-2xl md:text-3xl">ウラトレ式「個」の育成メソッド</span>
           </h1>
           <p className="text-[#595045]/80 text-lg leading-relaxed max-w-3xl mb-6">
             チーム練習だけでは補いきれない「個人の技術」「判断力」「身体操作」を徹底的に磨きます。<br/>

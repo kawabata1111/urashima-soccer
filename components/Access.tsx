@@ -14,12 +14,8 @@ export const Access: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
         
         {/* Left: Info Card */}
-        <div 
-          className="bg-white p-8 md:p-10 order-2 lg:order-1 flex flex-col justify-center"
-          style={{ 
-            borderRadius: "30px 20px 40px 25px",
-            boxShadow: "0 20px 40px -20px rgba(0,0,0,0.05)"
-          }}
+        <div
+          className="bg-white p-8 md:p-10 order-2 lg:order-1 flex flex-col justify-center rounded-2xl shadow-[0_20px_40px_-20px_rgba(0,0,0,0.05)]"
         >
           <div className="flex items-center gap-3 mb-8">
             <div className="w-10 h-10 bg-[#FFFBF0] rounded-full flex items-center justify-center text-[#E6A57E] shadow-sm">
@@ -82,16 +78,11 @@ export const Access: React.FC = () => {
         </div>
 
         {/* Right: Map Card */}
-        <div 
-          className="order-1 lg:order-2 bg-white p-2 shadow-lg h-[400px] lg:h-auto min-h-[400px]"
-          style={{ 
-             borderRadius: "40px 25px 30px 40px",
-             transform: "rotate(1deg)"
-          }}
+        <div
+          className="order-1 lg:order-2 bg-white p-2 shadow-lg h-[400px] lg:h-auto min-h-[400px] rounded-2xl"
         >
-          <div 
-            className="w-full h-full overflow-hidden"
-            style={{ borderRadius: "35px 20px 25px 35px" }}
+          <div
+            className="w-full h-full overflow-hidden rounded-xl"
           >
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.966375618218!2d139.6845347764136!3d35.72703817257256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed3999999999%3A0x0!2zMzXCsDQzJzM3LjMiTiAxMznCsDQxJzEyLjQiRQ!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
