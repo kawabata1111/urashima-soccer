@@ -8,6 +8,7 @@ const IMAGES = [
   '/images/hero-1.jpg',
   '/images/hero-lesson.jpg',
   '/images/school-cones.jpg',
+  '/images/junior-athlete.jpg',
 ];
 
 export const Hero: React.FC = () => {
@@ -35,32 +36,32 @@ export const Hero: React.FC = () => {
       ))}
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#595045]/80 via-[#595045]/40 to-transparent"></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#595045]/30 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/80 via-[#0F172A]/40 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/30 to-transparent"></div>
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
-          <div className="inline-block px-4 py-1 bg-[#E6A57E] text-white text-sm font-bold mb-4 rounded-full shadow-sm">
+          <div className="inline-block px-4 py-1 bg-[#F97316] text-white text-sm font-bold mb-4 rounded-full shadow-sm">
             豊島区・南長崎
           </div>
           <h1 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
-            独自の「ウラトレ式」<br />
-            <span className="text-[#94A684] text-4xl md:text-6xl relative inline-block drop-shadow-lg">
+            独自の「浦崎式」<br />
+            <span className="text-[#F97316] text-4xl md:text-6xl relative inline-block drop-shadow-lg">
               ウラトレ
-              <svg className="absolute w-full h-3 -bottom-1 left-0 text-[#E6A57E]/60" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-[#F97316]/60" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="none" />
               </svg>
             </span>
           </h1>
           <p className="text-white/90 mb-8 font-medium leading-relaxed text-lg">
-            チーム練習だけでは足りない「個」の力。<br />
-            サッカースクール・パーソナル・スタジオ。<br />
-            ここから、あなたの<span className="text-[#E6A57E] font-bold">新しい可能性</span>を描き出します。
+            ジュニアアスリートの支援を行うスタジオ。<br />
+            サッカー・ゴルフ・フィジカルトレーニング。<br />
+            ここから、<span className="text-[#F97316] font-bold">輝く未来</span>が始まる。
           </p>
           <div className="flex flex-col sm:flex-row gap-5">
             <a href={COMPANY_INFO.reservationUrl} target="_blank" rel="noopener noreferrer">
-              <Button variant="primary" className="group shadow-lg">
+              <Button variant="accent" className="group shadow-lg">
                 無料体験・予約する
                 <ChevronRight className="ml-1 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -76,7 +77,7 @@ export const Hero: React.FC = () => {
             key={index}
             onClick={() => setCurrentImage(index)}
             className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-              index === currentImage ? 'bg-[#E6A57E] w-7' : 'bg-white/50 hover:bg-white/80'
+              index === currentImage ? 'bg-[#F97316] w-7' : 'bg-white/50 hover:bg-white/80'
             }`}
             aria-label={`画像${index + 1}を表示`}
           />

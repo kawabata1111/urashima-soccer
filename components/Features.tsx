@@ -25,13 +25,13 @@ export const Features: React.FC = () => {
             return (
               <div
                 key={index}
-                className="group bg-white p-8 rounded-2xl border border-[#94A684]/20 shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg text-center"
+                className="group bg-white p-8 rounded-2xl border border-[#2563EB]/20 shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-lg text-center"
               >
-                <div className="w-16 h-16 mb-4 mx-auto text-[#94A684] bg-[#F9F7F2] rounded-full flex items-center justify-center border-2 border-[#94A684]/10 group-hover:scale-110 transition-transform group-hover:border-[#E6A57E] group-hover:text-[#E6A57E]">
+                <div className="w-16 h-16 mb-4 mx-auto text-[#22C55E] bg-[#F0FDF4] rounded-full flex items-center justify-center border-2 border-[#22C55E]/10 group-hover:scale-110 transition-transform group-hover:border-[#F97316] group-hover:text-[#F97316]">
                   <Icon size={32} />
                 </div>
-                <h3 className="text-lg font-bold mb-3 text-[#595045]">{feature.title}</h3>
-                <p className="text-sm text-[#595045]/80 leading-relaxed">
+                <h3 className="text-lg font-bold mb-3 text-[#1E293B]">{feature.title}</h3>
+                <p className="text-sm text-[#1E293B]/80 leading-relaxed">
                   {feature.description}
                 </p>
               </div>

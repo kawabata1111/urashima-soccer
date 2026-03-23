@@ -27,11 +27,11 @@ export const FloatingNav: React.FC = () => {
 
   return (
     <div className="hidden md:flex fixed bottom-6 right-4 z-40 flex-col items-end gap-3 pointer-events-none">
-      
+
       {/* Top Scroll Button */}
       <button
         onClick={scrollToTop}
-        className={`pointer-events-auto p-3 bg-white/90 text-[#595045] rounded-full shadow-lg border-2 border-[#94A684]/20 hover:bg-[#94A684] hover:text-white transition-all duration-300 transform hover:scale-110 ${
+        className={`pointer-events-auto p-3 bg-white/90 text-[#1E293B] rounded-full shadow-lg border-2 border-[#2563EB]/20 hover:bg-[#2563EB] hover:text-white transition-all duration-300 transform hover:scale-110 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
         }`}
         aria-label="トップへ戻る"
@@ -47,7 +47,7 @@ export const FloatingNav: React.FC = () => {
         className="pointer-events-auto group relative transition-all duration-300 hover:scale-105"
         aria-label="LINEで問い合わせ"
       >
-        <span className="absolute right-full mr-3 bg-white px-3 py-1 rounded-lg text-xs font-bold shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-[#595045] top-1/2 -translate-y-1/2">
+        <span className="absolute right-full mr-3 bg-white px-3 py-1 rounded-lg text-xs font-bold shadow-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none text-[#1E293B] top-1/2 -translate-y-1/2">
           LINEで質問
         </span>
         <img src="/images/line-icon.png" alt="LINE" className="w-14 h-14 object-contain" />
@@ -58,7 +58,7 @@ export const FloatingNav: React.FC = () => {
         href={COMPANY_INFO.reservationUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="pointer-events-auto group relative flex items-center gap-2 pl-4 pr-5 py-3 bg-[#E6A57E] text-white rounded-[30px_30px_5px_30px] shadow-xl hover:bg-[#D6956E] hover:-translate-y-1 transition-all duration-300 animate-bounce-slow"
+        className="pointer-events-auto group relative flex items-center gap-2 pl-4 pr-5 py-3 bg-[#F97316] text-white rounded-[30px_30px_5px_30px] shadow-xl hover:bg-[#EA580C] hover:-translate-y-1 transition-all duration-300 animate-bounce-slow"
       >
         <div className="bg-white/20 p-1.5 rounded-full">
           <CalendarCheck size={20} />
@@ -67,9 +67,9 @@ export const FloatingNav: React.FC = () => {
           <span className="text-[10px] opacity-90 font-bold mb-0.5">24時間受付中</span>
           <span className="text-sm font-black tracking-wide">無料体験予約</span>
         </div>
-        
+
         {/* Decorative Badge */}
-        <div className="absolute -top-2 -left-2 bg-[#94A684] text-white text-[10px] font-bold px-2 py-0.5 rounded-full transform -rotate-12 border border-white shadow-sm">
+        <div className="absolute -top-2 -left-2 bg-[#2563EB] text-white text-[10px] font-bold px-2 py-0.5 rounded-full transform -rotate-12 border border-white shadow-sm">
           簡単1分!
         </div>
       </a>

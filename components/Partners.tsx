@@ -18,7 +18,7 @@ export const Partners: React.FC = () => {
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: 'url(/images/junior-athlete.jpg)' }}
             />
-            <div className="absolute inset-0 bg-[#3D3529]/70" />
+            <div className="absolute inset-0 bg-[#0F172A]/70" />
             <div className="relative z-10 p-10 md:p-14 text-center text-white">
               <p className="text-lg md:text-xl leading-relaxed">
                 ウラトレは<span className="font-bold">サッカー、ゴルフ、その他スポーツ</span>を行う<br className="hidden md:block" />
@@ -35,7 +35,7 @@ export const Partners: React.FC = () => {
 
         {/* Partners */}
         <div className="max-w-2xl mx-auto">
-          <p className="text-center text-xs text-[#595045]/40 font-bold tracking-[0.2em] uppercase mb-8">
+          <p className="text-center text-xs text-[#1E293B]/40 font-bold tracking-[0.2em] uppercase mb-8">
             Official Partners
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -44,13 +44,13 @@ export const Partners: React.FC = () => {
               href="https://lazzy-japan.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-[#F9F7F2] p-8 rounded-2xl border border-[#94A684]/10 hover:shadow-lg hover:-translate-y-1 transition-all text-center"
+              className="group block bg-[#FAFAFA] p-8 rounded-2xl border border-[#2563EB]/10 hover:shadow-lg hover:-translate-y-1 transition-all text-center"
             >
-              <h3 className="text-2xl font-black text-[#595045] group-hover:text-[#94A684] transition-colors tracking-wide">
+              <h3 className="text-2xl font-black text-[#1E293B] group-hover:text-[#2563EB] transition-colors tracking-wide">
                 LAzzy JAPAN
               </h3>
-              <p className="text-xs text-[#595045]/40 mt-2 mb-5">lazzy-japan.com</p>
-              <span className="inline-flex items-center gap-1.5 text-[#E6A57E] text-sm font-bold border-b border-[#E6A57E]/30 pb-0.5 group-hover:border-[#E6A57E] transition-colors">
+              <p className="text-xs text-[#1E293B]/40 mt-2 mb-5">lazzy-japan.com</p>
+              <span className="inline-flex items-center gap-1.5 text-[#F97316] text-sm font-bold border-b border-[#F97316]/30 pb-0.5 group-hover:border-[#F97316] transition-colors">
                 サイトを見る
                 <ExternalLink size={13} />
               </span>
@@ -61,13 +61,13 @@ export const Partners: React.FC = () => {
               href="https://www.athleta.co.jp/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-[#F9F7F2] p-8 rounded-2xl border border-[#94A684]/10 hover:shadow-lg hover:-translate-y-1 transition-all text-center"
+              className="group block bg-[#FAFAFA] p-8 rounded-2xl border border-[#2563EB]/10 hover:shadow-lg hover:-translate-y-1 transition-all text-center"
             >
-              <h3 className="text-2xl font-black text-[#595045] group-hover:text-[#94A684] transition-colors tracking-wide">
+              <h3 className="text-2xl font-black text-[#1E293B] group-hover:text-[#2563EB] transition-colors tracking-wide">
                 ATHLETA
               </h3>
-              <p className="text-xs text-[#595045]/40 mt-2 mb-5">athleta.co.jp</p>
-              <span className="inline-flex items-center gap-1.5 text-[#E6A57E] text-sm font-bold border-b border-[#E6A57E]/30 pb-0.5 group-hover:border-[#E6A57E] transition-colors">
+              <p className="text-xs text-[#1E293B]/40 mt-2 mb-5">athleta.co.jp</p>
+              <span className="inline-flex items-center gap-1.5 text-[#F97316] text-sm font-bold border-b border-[#F97316]/30 pb-0.5 group-hover:border-[#F97316] transition-colors">
                 サイトを見る
                 <ExternalLink size={13} />
               </span>

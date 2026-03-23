@@ -11,41 +11,37 @@ export const Header: React.FC = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Helper to handle navigation: scroll if home, navigate if not
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    // href looks like "/#hero"
     if (href.startsWith('/#')) {
       const id = href.substring(2);
       const element = document.getElementById(id);
       if (isHome && element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-      // If not home, standard link behavior (handled by a tag or Link component) works best with absolute path, 
-      // but standard anchor with ID requires matching ID on page.
-      // Since we use absolute paths in NAV_ITEMS (e.g. /#hero), standard <a> works well with backend router or hash router.
-      // But purely client side, we might need a delay or useEffect to scroll after nav.
-      // For simplicity in this environment, we stick to standard <a> behavior which browser handles well for /#id.
     }
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#F9F7F2]/90 backdrop-blur-sm border-b border-[#94A684]/10">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+    <header className="sticky top-0 z-50 bg-[#FAFAFA]/90 backdrop-blur-sm border-b border-[#2563EB]/10">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex flex-col group" onClick={() => window.scrollTo(0,0)}>
-          <span className="text-2xl font-black text-[#94A684] tracking-wider group-hover:text-[#839674] transition-colors font-heading">URATORE</span>
-          <span className="text-[10px] text-[#595045] font-bold">豊島サッカースクール＆スタジオ</span>
+        <Link to="/" className="flex items-center gap-2 group" onClick={() => window.scrollTo(0,0)}>
+          <img src="/images/uratore-logo.png" alt="ウラトレ" className="h-10 w-10 object-contain" />
+          <div className="flex flex-col">
+            <span className="text-xl font-black text-[#2563EB] tracking-wider group-hover:text-[#1D4ED8] transition-colors font-heading">URATORE</span>
+            <span className="text-[10px] text-[#1E293B] font-bold">豊島サッカースクール＆スタジオ</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {NAV_ITEMS.map((item) => (
-            <a 
-              key={item.label} 
-              href={item.href} 
+            <a
+              key={item.label}
+              href={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="text-[#595045] hover:text-[#94A684] font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#E6A57E] after:transition-all hover:after:w-full hover:after:rounded-full"
+              className="text-[#1E293B] hover:text-[#2563EB] font-medium transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-[#F97316] after:transition-all hover:after:w-full hover:after:rounded-full"
             >
               {item.label}
             </a>
@@ -60,8 +56,8 @@ export const Header: React.FC = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden p-2 text-[#595045]"
+        <button
+          className="md:hidden p-2 text-[#1E293B]"
           onClick={toggleMenu}
           aria-label="メニューを開く"
         >
@@ -71,21 +67,21 @@ export const Header: React.FC = () => {
 
       {/* Mobile Nav Overlay */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#F9F7F2] border-b border-[#94A684]/20 shadow-[0_10px_40px_rgba(0,0,0,0.05)] flex flex-col p-6 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#FAFAFA] border-b border-[#2563EB]/20 shadow-[0_10px_40px_rgba(0,0,0,0.05)] flex flex-col p-6 animate-fade-in">
           {NAV_ITEMS.map((item) => (
-            <a 
-              key={item.label} 
-              href={item.href} 
-              className="py-3 px-4 text-[#595045] font-bold border-b border-dashed border-[#94A684]/20 hover:bg-white/50 rounded-lg transition-colors"
+            <a
+              key={item.label}
+              href={item.href}
+              className="py-3 px-4 text-[#1E293B] font-bold border-b border-dashed border-[#2563EB]/20 hover:bg-white/50 rounded-lg transition-colors"
               onClick={() => handleNavClick(item.href)}
             >
               {item.label}
             </a>
           ))}
           <div className="mt-6 flex flex-col gap-4">
-             <a href={COMPANY_INFO.reservationUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
-               <Button variant="accent" fullWidth>無料体験予約フォーム</Button>
-             </a>
+            <a href={COMPANY_INFO.reservationUrl} target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+              <Button variant="accent" fullWidth>無料体験予約フォーム</Button>
+            </a>
           </div>
         </div>
       )}

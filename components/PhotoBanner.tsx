@@ -12,7 +12,7 @@ export const PhotoBanner: React.FC<PhotoBannerProps> = ({ image, text, subtext }
       className="absolute inset-0 bg-cover bg-center"
       style={{ backgroundImage: `url(${image})` }}
     />
-    <div className="absolute inset-0 bg-[#3D3529]/60" />
+    <div className="absolute inset-0 bg-[#0F172A]/60" />
     <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
       <div>
         <p className="text-2xl md:text-4xl font-bold text-white">{text}</p>
